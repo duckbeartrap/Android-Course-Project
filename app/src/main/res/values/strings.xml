@@ -10,4 +10,6 @@
     <string name="enter_your_age">Enter Your Age</string>
     <string name="tvRegistration_Text">Registration</string>
     <string name="btnMain">Go Back</string>
+    <string name="hello">hello</string>
+    <string name="age">Age</string>
 </resources>

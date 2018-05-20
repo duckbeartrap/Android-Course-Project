@@ -7,25 +7,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/signin"
+    <com.lorentzos.flingswipe.SwipeFlingAdapterView
+        android:id="@+id/frame"
+        android:background="#ffeee9e2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/sign_in"
-        android:textStyle="bold"
-        android:textSize="@dimen/mainbutton_text_size"
-        android:onClick="click_signin"
-        />
+        android:layout_height="match_parent"
+        app:rotation_degrees="15.5"
+        tools:context=".MyActivity" />
 
     <Button
-        android:id="@+id/signup"
+        android:id="@+id/btnSignOut"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/sign_up"
-        android:layout_below="@id/signin"
-        android:textStyle="bold"
-        android:textSize="@dimen/mainbutton_text_size"
-        android:onClick="click_signup"
+        android:text="Sign Out"
+        android:onClick="onclick_signout"
         />
 
 </RelativeLayout>
