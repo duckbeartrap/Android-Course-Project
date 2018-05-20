@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "907576210108",
+    "firebase_url": "https://dawi-2018.firebaseio.com",
+    "project_id": "dawi-2018",
+    "storage_bucket": "dawi-2018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907576210108:android:805eaefde9ee2b7e",
+        "android_client_info": {
+          "package_name": "com.example.david.dawi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907576210108-foa27t46smpbgrtglcl2e0gn6t5f3b92.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.david.dawi",
+            "certificate_hash": "7feffb3143a5bc21720c48a257bc3d1bb757955a"
+          }
+        },
+        {
+          "client_id": "907576210108-dbjod4hfg4rnhu5mnlul443b18h9np09.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEkvdwG7ACj67PD7fSrvYY24sjk4AvWuk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907576210108-dbjod4hfg4rnhu5mnlul443b18h9np09.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

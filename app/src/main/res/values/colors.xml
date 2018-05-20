@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C2185B</color>
+    <color name="colorPrimaryDark">#C2185B</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="EditText_Text_color">#FFFDE7</color>
+    <color name="btnLogin_textcolor">#5D4037</color>
+    <color name="tvLoginColor">#4A148C</color>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DAWI</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="btnLogin_Text">Login</string>
+    <string name="btnSignUp_Text">Sign Up</string>
+    <string name="enter_your_username">Enter Your Username</string>
+    <string name="enter_your_age">Enter Your Age</string>
+    <string name="tvRegistration_Text">Registration</string>
+    <string name="btnMain">Go Back</string>
+</resources>

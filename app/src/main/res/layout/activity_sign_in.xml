@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="@dimen/tvLogin_size"
+        android:textStyle="bold"
+        android:textColor="@color/tvLoginColor"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/etSignInEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/tvLogin"
+        android:layout_marginTop="@dimen/margin_top"
+        android:textColor="@color/EditText_Text_color"
+        android:textColorHint="@color/EditText_Text_color"
+        />
+
+    <EditText
+        android:id="@+id/etSignInPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_password"
+        android:inputType="textPassword"
+        android:layout_below="@id/etSignInEmail"
+        android:layout_marginTop="@dimen/margin_top"
+        android:textColor="@color/EditText_Text_color"
+        android:textColorHint="@color/EditText_Text_color"
+        />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnLogin_Text"
+        android:textColor="@color/btnLogin_textcolor"
+        android:layout_below="@id/etSignInPassword"
+        android:layout_marginTop="@dimen/margin_top"
+        android:onClick="click_loginin"
+        />
+
+    <Button
+        android:id="@+id/btnMainPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnMain"
+        android:textColor="@color/btnLogin_textcolor"
+        android:layout_below="@id/btnLogin"
+        android:layout_marginTop="@dimen/margin_top"
+        android:onClick="click_mainpage"
+        />
+
+</RelativeLayout>

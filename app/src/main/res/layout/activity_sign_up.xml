@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:id="@+id/tvRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvRegistration_Text"
+        android:textSize="@dimen/tvLogin_size"
+        android:textStyle="bold"
+        android:textColor="@color/tvLoginColor"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/etSignUpUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_username"
+        android:inputType="text"
+        android:layout_below="@id/tvRegistration"
+        android:layout_marginTop="@dimen/margin_top"
+        android:textColor="@color/EditText_Text_color"
+        android:textColorHint="@color/EditText_Text_color"
+        />
+
+    <EditText
+        android:id="@+id/etSignUpAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_age"
+        android:inputType="number"
+        android:layout_below="@id/etSignUpUsername"
+        android:layout_marginTop="@dimen/margin_top"
+        android:textColor="@color/EditText_Text_color"
+        android:textColorHint="@color/EditText_Text_color"
+        />
+
+    <EditText
+        android:id="@+id/etSignUpEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/etSignUpAge"
+        android:layout_marginTop="@dimen/margin_top"
+        android:textColor="@color/EditText_Text_color"
+        android:textColorHint="@color/EditText_Text_color"
+        />
+
+    <EditText
+        android:id="@+id/etSignUpPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_password"
+        android:inputType="textPassword"
+        android:layout_below="@id/etSignUpEmail"
+        android:layout_marginTop="@dimen/margin_top"
+        android:textColor="@color/EditText_Text_color"
+        android:textColorHint="@color/EditText_Text_color"
+        />
+
+    <Button
+        android:id="@+id/btnSignUpLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSignUp_Text"
+        android:textColor="@color/btnLogin_textcolor"
+        android:layout_below="@id/etSignUpPassword"
+        android:layout_marginTop="@dimen/margin_top"
+        android:onClick="click_register"
+        />
+
+    <Button
+        android:id="@+id/btnMainPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnMain"
+        android:textColor="@color/btnLogin_textcolor"
+        android:layout_below="@id/btnSignUpLogin"
+        android:layout_marginTop="@dimen/margin_top"
+        android:onClick="click_mainpage"
+        />
+
+</RelativeLayout>
