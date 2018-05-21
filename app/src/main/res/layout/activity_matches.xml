@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Matches.MatchesActivity"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tvMatches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Matches"
+            android:textSize="@dimen/tvLogin_size"
+            android:textStyle="bold"
+            android:textColor="@color/tvLoginColor"
+            android:gravity="center"
+            />
+
+        <Button
+            android:id="@+id/btnMainPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnMain"
+            android:textColor="@color/btnLogin_textcolor"
+            android:onClick="click_mainpage"
+            android:layout_below="@id/tvMatches"
+            />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btnMainPage">
+            
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/myrecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+            </android.support.v7.widget.RecyclerView>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

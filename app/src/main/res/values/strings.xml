@@ -12,4 +12,6 @@
     <string name="btnMain">Go Back</string>
     <string name="hello">hello</string>
     <string name="age">Age</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_goback">Go Back</string>
 </resources>

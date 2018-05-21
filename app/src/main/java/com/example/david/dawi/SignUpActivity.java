@@ -22,6 +22,9 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class SignUpActivity extends AppCompatActivity {
 
     private EditText etUsername, etAge, etEmail, etPassword;
@@ -109,10 +112,17 @@ public class SignUpActivity extends AppCompatActivity {
                 }
                 else {
                     String userId = auth.getCurrentUser().getUid();
-                    DatabaseReference currentUserName = FirebaseDatabase.getInstance().getReference().child("Users").child(radioButton.getText().toString()).child(userId).child("name");
-                    DatabaseReference currentUserAge = FirebaseDatabase.getInstance().getReference().child("Users").child(radioButton.getText().toString()).child(userId).child("age");
-                    currentUserName.setValue(name);
-                    currentUserAge.setValue(age);
+                    DatabaseReference currentUserDb = FirebaseDatabase.getInstance().getReference().child("Users").child(userId);
+
+                    Map userinfo = new HashMap<>();
+                    userinfo.put("name",name);
+                    userinfo.put("gender", radioButton.getText().toString());
+                    userinfo.put("profileImageUrl","default");
+                    userinfo.put("age",age);
+                    userinfo.put("phone","phone: ");
+                    userinfo.put("description","description: ");
+
+                    currentUserDb.updateChildren(userinfo);
                 }
             }
         });

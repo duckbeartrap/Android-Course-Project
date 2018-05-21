@@ -3,4 +3,5 @@
     <dimen name="mainbutton_text_size">15sp</dimen>
     <dimen name="margin_top">10dp</dimen>
     <dimen name="tvLogin_size">30sp</dimen>
+    <dimen name="profileimagesize">150sp</dimen>
 </resources>

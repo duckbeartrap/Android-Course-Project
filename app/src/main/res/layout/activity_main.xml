@@ -7,20 +7,56 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.lorentzos.flingswipe.SwipeFlingAdapterView
-        android:id="@+id/frame"
-        android:background="#ffeee9e2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:rotation_degrees="15.5"
-        tools:context=".MyActivity" />
-
-    <Button
-        android:id="@+id/btnSignOut"
+    <LinearLayout
+        android:id="@+id/lnLinear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign Out"
-        android:onClick="onclick_signout"
-        />
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_margin="@dimen/margin_top">
+
+        <Button
+            android:id="@+id/btnMatches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matches"
+            android:onClick="onclick_matches"
+            android:layout_weight="3"
+            />
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:onClick="onclick_settings"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btnSignOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"
+            android:onClick="onclick_signout"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lnLinear"
+        android:layout_margin="@dimen/margin_top">
+
+        <com.lorentzos.flingswipe.SwipeFlingAdapterView
+            android:id="@+id/frame"
+            android:background="#ffeee9e2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:rotation_degrees="15.5"
+            tools:context=".MyActivity"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>
